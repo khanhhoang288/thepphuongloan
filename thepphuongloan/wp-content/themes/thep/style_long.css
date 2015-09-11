@@ -1,0 +1,20 @@
+#theme-footer{
+	color: white;
+}
+#theme-footer .footer-widget-top{
+	color: #ffcc00;
+}
+#theme-footer .footer-widget-top h4{
+	font-size: 12px;
+    line-height: 150%;
+    font-weight: bold;
+}
+#theme-footer .footer-widget-container{
+	font-size: 12px;
+	line-height: 150%;
+}
+#theme-footer div div span{
+}
+.yellow-text{
+	color: #ffcc00;	
+}

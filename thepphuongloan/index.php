@@ -15,3 +15,7 @@ define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+?>
+
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style_long.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style_hoang.css" type="text/css" media="screen" />
