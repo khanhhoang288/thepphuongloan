@@ -1,3 +1,5 @@
+/*FOR FOOTER*/
+
 #theme-footer{
 	color: white;
 }
@@ -17,4 +19,44 @@
 }
 .yellow-text{
 	color: #ffcc00;	
+}
+
+/* FOR CATEGORY LIST CUSTOM */
+.cat-img{
+	float: left;
+	width: 20%;
+}
+.cat-info{
+	float: right;
+	width: 80%;
+	text-align: left;
+	padding: 4px;
+}
+.cat-title{
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: #ffffff;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.cat-name a{
+    color: #003686;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cat-description{
+	padding-top: 10px;
+	font-size: 12px;
+	line-height: 150%;
+	color: #3c3c3c;
+}
+
+/*FOR SUPPORT */
+.clear{
+	/*clear: both;*/
 }

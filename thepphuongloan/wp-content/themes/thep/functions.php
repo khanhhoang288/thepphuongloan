@@ -27,4 +27,11 @@ if( tie_get_option( 'live_search' ) )
 if( !tie_get_option( 'disable_arqam_lite' ) )
 	require_once ( get_template_directory() . '/framework/functions/arqam-lite.php');
 
+// Add custom sourcecode
+include(WP_CONTENT_DIR . '/themes/thep/my_custom_shortcodes.php');
+add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
+
+
 ?>
+
+
