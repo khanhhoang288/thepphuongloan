@@ -82,4 +82,96 @@
 .float-l{
 	float: left;
 }
+
+
+/* FOR MODULE */
+.module_title,#sidebar div.widget div.widget-top h4{
+	margin: 0 0 0px 0;
+    padding: 8px 10px 8px 20px;
+    background: #fffc01;
+    font-size: 14px;
+    line-height: 18px;
+    height: 34px;
+    text-transform: uppercase;
+    color: #0D8EC7;
+    position: relative;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    width: 100%;
+}
+#sidebar .widget .widget-top .stripe-line{
+	display: none;
+}
+div.widget-top{
+	padding: 0px;
+}
+#sidebar div.widget-container{
+	background: #d4d4d4;
+    /*margin-bottom: 16px;*/
+    /*padding: 0px 0px 3px;*/
+	padding: 0px 20px;
+}
+.module_title .module_icon{
+	position: absolute;
+    background: url(images/tpl/box_title_icon.png) no-repeat 0px 0px;
+    width: 16px;
+    height: 31px;
+    top: 2px;
+    left: 0px;
+}
+.module_content ul li, div.widget div.widget-container ul li{
+	margin: 0 0 0px 0;
+    padding: 2px 0px 0px 0px !important;
+    background: url(images/tpl/menu_hr.gif) repeat-x center top;
+}
+div.widget div.widget-container ul li:first-child{
+	padding-top: 0px;
+	background: none;
+}
+div.widget div.widget-container ul li a{
+	display: block;
+    padding: 6px 0px 6px 0px;
+    color: #000000;
+    font-weight: bold;
+}
+.widget_categories .widget-container li:before, .widget_product_categories ul li:before{
+	content: none;
+}
+.widget-top h4::before{
+  content: url(images/tpl/box_title_icon.png);
+  position: absolute; /*or absolute*/
+  z-index: 100000; /*a number that's more than the modal box*/
+  width: 16px;
+  height: 31px;
+  top: 2px;
+  left: 0px;
+}
+
+/* FOR NEWS */
+div#breaking-news{
+	height: 30px;
+}
+.breaking-news ul{
+    /*margin-top: 10px;*/
+    background: #ffffff;
+    height: 30ppx;
+    /*padding: 6px 0px;*/
+    position: relative;
+    border-left: 4px solid #feba01;
+    position: relative;
+}
+.breaking-news ul a{
+	display: block;
+    float: left;
+    margin: 0;
+    font-size: 12px;
+    /*padding: 0px 0px 0px 10px;*/
+    padding-left: 10px;
+    white-space: nowrap;
+    color: #000;
+    background: url(images/tpl/menu_icon.gif) no-repeat 0px 14px;
+    margin-left: 20px;
+}
+div#breaking-news span.breaking-news-title{
+	display: none;
 }
