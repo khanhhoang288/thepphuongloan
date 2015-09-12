@@ -84,7 +84,7 @@
 }
 
 
-/* FOR MODULE */
+/* FOR MODULE PRODUCT CATEGORY */
 .module_title,#sidebar div.widget div.widget-top h4{
 	margin: 0 0 0px 0;
     padding: 8px 10px 8px 20px;
@@ -109,7 +109,7 @@ div.widget-top{
 	background: #d4d4d4;
     /*margin-bottom: 16px;*/
     /*padding: 0px 0px 3px;*/
-	padding: 0px 20px;
+	padding: 5px 20px;
 }
 .module_title .module_icon{
 	position: absolute;
@@ -174,4 +174,17 @@ div#breaking-news{
 }
 div#breaking-news span.breaking-news-title{
 	display: none;
+}
+
+/* FOR MODULE CATEGORY NEWS*/
+div.widget.categort-posts div.widget-container img{
+	width: 72px;
+	height: 50px;
+}
+div.widget.categort-posts div.widget-container li{
+	padding: 5px !important;
+}
+div.widget.categort-posts div.widget-container a{
+	padding: 0px;
+	font-weight: normal;
 }
