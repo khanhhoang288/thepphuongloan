@@ -188,3 +188,38 @@ div.widget.categort-posts div.widget-container a{
 	padding: 0px;
 	font-weight: normal;
 }
+
+/* FOR CONTENT IN MAIN CLIENT */
+div.cat-box-title h2 a{
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: #ffffff;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+}
+div.cat-box-title div.stripe-line{
+	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
+    height: 14px;
+    margin-top: 0px;
+}
+div.cat-box-content li.first-news a{
+    color: #003686;
+    font-size: 16px;
+}
+div.cat-box-content li.other-news{
+    float: left;
+    width: 46%;
+    border: 2px solid #dbdbdb;
+    border-top: none;
+    border-right: none;
+    margin: 10px 10px 20px 0px;
+    height: 100px;
+}
+div.cat-box-content li.other-news a{
+	color: #003686;
+}
