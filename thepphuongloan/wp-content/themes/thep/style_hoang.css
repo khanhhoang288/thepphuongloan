@@ -18,3 +18,18 @@ div > #theme-header
 
 	margin-top: -20px;
 }
+
+div.header-content
+{
+	padding: 8px 15px;
+}
+
+#sidebar
+{
+	width: 20%;
+}
+
+div.content
+{
+	width: 78%;
+}
