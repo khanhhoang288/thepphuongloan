@@ -1,0 +1,20 @@
+#main-content
+{
+ background-color: white !important;
+}
+
+div.inner-wrapper
+{
+	background-color: #4ebee3 !important;
+}
+
+div > #theme-header
+{
+	margin-bottom: 10px;
+}
+
+#wrapper
+{
+
+	margin-top: -20px;
+}

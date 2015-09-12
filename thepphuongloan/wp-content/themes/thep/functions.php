@@ -28,10 +28,24 @@ if( !tie_get_option( 'disable_arqam_lite' ) )
 	require_once ( get_template_directory() . '/framework/functions/arqam-lite.php');
 
 // Add custom sourcecode
+
 include(WP_CONTENT_DIR . '/themes/thep/my_custom_shortcodes.php');
 add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
 
 
+
+// add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
+// function woocommerce_category_image() {
+//     if ( is_product_category() ){
+// 	    global $wp_query;
+// 	    $cat = $wp_query->get_queried_object();
+// 	    $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+// 	    $image = wp_get_attachment_url( $thumbnail_id );
+// 	    if ( $image ) {
+// 		    echo '<img src="' . $image . '" alt="" />';
+// 		}
+// 	}
+// }
 ?>
 
 
