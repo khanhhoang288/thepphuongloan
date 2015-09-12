@@ -28,11 +28,7 @@ if( !tie_get_option( 'disable_arqam_lite' ) )
 	require_once ( get_template_directory() . '/framework/functions/arqam-lite.php');
 
 // Add custom sourcecode
-
-include(WP_CONTENT_DIR . '/themes/thep/my_custom_shortcodes.php');
 add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
-
-
 
 // add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
 // function woocommerce_category_image() {
@@ -48,4 +44,39 @@ add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
 // }
 ?>
 
+<?php
+function custom_list_category(){
+  $args = array(
+    'number'     => 0,
+    'orderby' => 'name',
+    'order' => 'ASC',
+    'hide_empty' => false,
+    'include'    => $ids
+  );
 
+  $product_categories = get_terms( 'product_cat', $args );
+  $categories = $product_categories;
+    echo '<div class="cat-title">';
+    echo '<div class="float-l">Sản Phẩm</div>';
+    echo '<div class="float-r dot-dot" style="width:85%"></div>';
+    echo '</div>';
+    echo '<div class="clear">'.'</div>';
+    foreach($categories as $category) {
+      // get the thumbnail id user the term_id
+      $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ); 
+      // get the image URL
+      $image = wp_get_attachment_url( $thumbnail_id ); 
+    
+      echo '<div>';
+      echo "<div class='cat-img'><img src='{$image}' alt='' /></div>";
+      echo '<div class="cat-info">';
+      echo '<div class="cat-name"><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "Xem bài viết trong %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </div> ';
+      echo '<div class="cat-description">'. wp_trim_words( $category->description, $num_words = 55, $more = null ) . '</div>';
+      echo '</div>';
+      echo '</div>';
+      echo '<div class="clear">'.'</div>';
+      echo '<div class="hr"></div>';
+      echo '<br/>';
+    }
+}
+?>

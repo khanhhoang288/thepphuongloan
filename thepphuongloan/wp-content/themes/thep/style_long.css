@@ -1,7 +1,7 @@
 /*FOR FOOTER*/
 
 #theme-footer{
-	color: white;
+	color: white !important;
 }
 #theme-footer .footer-widget-top{
 	color: #ffcc00;
@@ -11,13 +11,15 @@
     line-height: 150%;
     font-weight: bold;
 }
-#theme-footer .footer-widget-container{
+#theme-footer .footer-widget-container td{
 	font-size: 12px;
 	line-height: 150%;
+	color: white;
+	vertical-align: top;
 }
 #theme-footer div div span{
 }
-.yellow-text{
+#theme-footer .footer-widget-container td.yellow-text{
 	color: #ffcc00;	
 }
 
@@ -25,6 +27,10 @@
 .cat-img{
 	float: left;
 	width: 20%;
+}
+.cat-img img{
+	max-width: 100px;
+	max-height: 100px;
 }
 .cat-info{
 	float: right;
@@ -42,6 +48,7 @@
     padding-right: 12px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    width: 100%;
 }
 .cat-name a{
     color: #003686;
@@ -59,4 +66,20 @@
 /*FOR SUPPORT */
 .clear{
 	/*clear: both;*/
+}
+.hr {
+    border-top: 1px dotted #cccccc;
+    height: 20px;
+    margin-top: 15px;
+}
+.dot-dot{
+	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
+    height: 14px;
+}
+.float-r{
+	float: right;
+}
+.float-l{
+	float: left;
+}
 }
