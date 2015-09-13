@@ -31,6 +31,7 @@ if( !tie_get_option( 'disable_arqam_lite' ) )
 add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
 add_shortcode( 'other_pro_cats_sc', 'other_pro_cats' );
 add_shortcode( 'btn_contact_sc', 'btn_contact' );
+add_shortcode( 'online_support_sc', 'online_support' );
 
 
 // add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
@@ -116,11 +117,44 @@ function other_pro_cats(){
 }
 ?>
 
-
+F`
 <?php
 function btn_contact(){
   echo '<div class="btn_contact">';
   echo '<a href="http://www.thepphuongloan.com/lien-he" title="Thông tin phản hồi mẫu" class="fancybox"><span>Tư vấn thông tin về sản phẩm</span></a>';
+  echo '</div>';
+}
+?>
+
+<?php
+function online_support(){
+  echo '<div class="box-content">';
+    echo '<div class="box_support">';
+      echo '<div class="row">';
+        echo '<div class="nick yahoo" nick="thepphuongloan@yahoo.com.vn" nick_type="yahoo"><a href="ymsgr:sendIM?thepphuongloan@yahoo.com.vn"><img src="'.get_stylesheet_directory_uri().'/images/tpl/yahoo_on.gif'.'" alt="" />'.'</a></div>';
+        echo '<div class="nick skype" nick="" nick_type="skype"><a href="Skype:?chat"><img src="'.get_stylesheet_directory_uri().'/images/tpl/skype_on.gif'.'"></a></div>';
+      echo '</div>';
+      echo '<div class="clear"></div>';
+      echo '<div class="hotline">';
+        echo '<table>';
+        echo '<tr>';
+        echo '<td class="l-span">Hotline:</td>';
+        echo '<td>08.38.660.340</td>';
+        echo '</tr>';
+        echo '<tr>';
+        echo '<td class="l-span"></td>';
+        echo '<td>08.6265.4166</td>';
+        echo '</tr>';
+        echo '<tr>';
+        echo '<td class="l-span">Email:</td>';
+        echo '<td><a href="mailto:Info@ThepPhuongLoan.com">Info@thepphuongloan.com</a></td>';
+        echo '</tr>';
+        echo '</table>';
+      echo '</div>';
+      echo '<div class="camera">';
+        echo '<a href="http://khophuongloan.homeip.net:81"><img src="'.get_stylesheet_directory_uri().'/images/tpl/CameraPhuongloan1.jpg" alt="Công ty thép Phương Loan" title="Công ty thép Phương Loan" style="width:180px;height:140px;"></a>';
+      echo '</div>';
+    echo '</div>';
   echo '</div>';
 }
 ?>

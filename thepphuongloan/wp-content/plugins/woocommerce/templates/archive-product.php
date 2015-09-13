@@ -30,6 +30,47 @@ get_header( 'shop' ); ?>
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
 		<?php endif; ?>
+		<div class="left-content">
+		<?php
+			/**
+			 * woocommerce_archive_description hook
+			 *
+			 * @hooked woocommerce_taxonomy_archive_description - 10
+			 * @hooked woocommerce_product_archive_description - 10
+			 */
+			do_action( 'woocommerce_archive_description' );
+			echo do_shortcode("[other_pro_cats_sc]");
+		?>
+		</div>
+		<!-- Product Category Thumbnail & Gallery -->
+		<div class="pro-cat-gallery">
+			<div class="big-thum">
+				<?php
+					$category = get_queried_object();
+					$thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ); 
+			      	// get the image URL
+			      	$image = wp_get_attachment_url( $thumbnail_id ); 
+			      	echo "<img src='{$image}' alt='' />";
+				?>
+			</div>
+			<br/>
+			<div class="small-thums">
+			<?php
+				for ($x = 0; $x <= 5; $x++) {
+					echo '<div class="small-thum">';
+    				echo "<img src='{$image}' alt='' />";
+    				echo '</div>';
+				} 
+			?>
+			<div class="clear"></div>
+			<br/>
+			<?php echo do_shortcode("[btn_contact_sc]"); ?>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<br/>
+		<h1 class="page-title">SẢN PHẨM</h1>
+		<!-- <div class="dot-dot" style="width:90%;text-align:center;margin-top:20px;"></div> -->
 
 			<?php woocommerce_product_loop_start(); ?>
 
@@ -43,15 +84,6 @@ get_header( 'shop' ); ?>
 
 			<?php woocommerce_product_loop_end(); ?>
 
-		<?php
-			/**
-			 * woocommerce_archive_description hook
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
 
 		<?php if ( have_posts() ) : ?>
 

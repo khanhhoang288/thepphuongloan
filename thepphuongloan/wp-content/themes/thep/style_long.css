@@ -1,4 +1,4 @@
-/* FOR BODY */
+section.column2 /* FOR BODY */
 body{
 	font-size: 12px;
     line-height: 150%;
@@ -214,9 +214,11 @@ div.cat-box-title div.stripe-line{
     height: 14px;
     margin-top: 0px;
 }
-div.cat-box-content li.first-news a{
-    color: #003686;
-    font-size: 16px;
+div.cat-box-content li.first-news{
+    display: none;
+}
+div.content div.cat-box-content{
+    box-shadow: none;
 }
 div.cat-box-content li.other-news{
     float: left;
@@ -337,4 +339,101 @@ div.btn_contact a span {
     background: url(images/tpl/btn_contact_pro.png) no-repeat right -36px;
     height: 35px;
     padding-right: 29px;
+}
+
+/* FOR CONTENT IN CUSTOMER */
+section.column2 div.cat-box-title h2 a{
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: #ffffff;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+}
+section.column2 div.cat-box-title div.stripe-line{
+	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
+    height: 14px;
+    margin-top: 0px;
+}
+section.column2 div.cat-box-content li.first-news{
+    display: none;
+}
+section.column2 div.content div.cat-box-content{
+    box-shadow: none;
+}
+section.column2 div.cat-box-content li.other-news{
+    float: left;
+    width: 100%;
+    border: 2px solid #dbdbdb;
+    border-top: none;
+    border-right: none;
+    margin: 10px 10px 20px 0px;
+    height: 100px;
+}
+section.column2 div.cat-box-content li.other-news a{
+	color: #003686;
+}
+div.content section.column2{
+	float: left;
+	width: 40%;
+}
+div.content .home-e3lan {
+    clear: none;
+    float: right;
+    width: 55%;
+    text-align: left;
+}
+div.list_comment-title {
+    color: #DC1206;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+div.content div.wpcf7 form input.wpcf7-submit {
+    background: url(images/tpl/btn.gif) repeat-x top;
+    height: 22px;
+    border: none;
+    padding: 0px !important;
+    border-right: 1px solid #000000;
+    color: #feba01 !important;
+    cursor: pointer;
+    font-size: 11px!important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px!important;
+    min-width: 70px;
+}
+form div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+	display: none !important;
+}
+
+/* FOR SHORTCODE ONLINE SUPPORT */
+.box .box-content {
+    padding: 5px 6px;
+}
+.box_support .row {
+    padding: 5px 0px 8px;
+ }
+ .box_support .row .yahoo {
+    float: left;
+    padding-top: 4px;
+}
+.box_support .row .skype {
+    float: right;
+}
+div.hotline{
+	padding-top: 5px;
+}
+div.hotline table tr td{
+	text-align: left;
+	font-size: 12px;
+    font-family: arial;
+    color: #3c3c3c;
+}
+div.hotline td.l-span{
+	width: 50px;
+	font-weight: bold;
 }
