@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
+	<?php echo do_shortcode("[slider_list_category_sc]") ?>
 
 	<?php
 		/**

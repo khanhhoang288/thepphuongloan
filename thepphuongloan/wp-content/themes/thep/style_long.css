@@ -384,7 +384,8 @@ div.content section.column2{
 div.content .home-e3lan {
     clear: none;
     float: right;
-    width: 55%;
+    /*width: 55%;*/
+    padding-right: 10px;
     text-align: left;
 }
 div.list_comment-title {
@@ -483,4 +484,45 @@ div.post-inner div.product span.posted_in a{
 div.post-inner div.product div.woocommerce-tabs div.panel{
 	float: none;
 	padding-top: 20px;
+}
+/* FOR PRODUCT CATEGORY SLIDER */
+div.container div.bx-wrapper div.bx-viewport{
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    padding-left: 10px;
+}
+div.container div.bx-wrapper div.bx-controls div.bx-pager{
+	display: none;
+}
+#carousel div.slide img{
+	border: 1px solid #cccccc;
+    padding: 2px;
+    width: 95px;
+    height: 62px;
+    text-align: center;
+    margin: auto;
+}
+#carousel div.slide span.slider-info{
+	text-align: left;
+}
+#carousel div.slide span.slider-info div.slider-name{
+	padding-top: 8px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#carousel div.slide span.slider-info div.slider-description{
+	padding-top: 5px;
+	font-size: 11px;
+    line-height: 150%;
+    font-family: arial;
+    color: #3c3c3c;
+}
+div.container div.bx-wrapper div.bx-controls-direction a.bx-prev{
+	left: -30px;
+}
+div.container div.bx-wrapper div.bx-controls-direction a.bx-next{
+	right: -30px;
 }

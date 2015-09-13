@@ -29,6 +29,7 @@ if( !tie_get_option( 'disable_arqam_lite' ) )
 
 // Add custom sourcecode
 add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
+add_shortcode( 'slider_list_category_sc', 'slider_list_category' );
 add_shortcode( 'other_pro_cats_sc', 'other_pro_cats' );
 add_shortcode( 'btn_contact_sc', 'btn_contact' );
 add_shortcode( 'online_support_sc', 'online_support' );
@@ -157,3 +158,53 @@ function online_support(){
   echo '</div>';
 }
 ?>
+
+<?php
+function slider_list_category(){
+  $args = array(
+    'number'     => 0,
+    'orderby' => 'name',
+    'order' => 'ASC',
+    'hide_empty' => false,
+    'include'    => $ids
+  );
+
+  $product_categories = get_terms( 'product_cat', $args );
+  $categories = $product_categories;
+    echo '<div class="cat-title">';
+    echo '<div class="float-l">Sản Phẩm</div>';
+    echo '<div class="float-r dot-dot" style="width:85%"></div>';
+    echo '</div>';
+    echo '<div class="clear">'.'</div>';
+    echo '<div id="carousel">';
+    foreach($categories as $category) {
+      // get the thumbnail id user the term_id
+      $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ); 
+      // get the image URL
+      $image = wp_get_attachment_url( $thumbnail_id ); 
+    
+      echo '<div class="slide">';
+        echo "<img src='{$image}' width='90' height='70' alt='' />";
+        echo '<span class="slider-info">';
+        echo '<div class="slider-name"><a href="' . get_category_link( $category ) . '" title="' . sprintf( __( "Xem bài viết trong %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </div> ';
+        echo '<div class="slider-description">'. wp_trim_words( $category->description, $num_words = 30, $more = null ) . '</div>';
+        echo '</span>';
+      echo '</div>';
+    }
+    echo '</div>';
+}
+?>
+
+<?php
+/**
+ * Proper way to enqueue scripts and styles
+ */
+function theme_name_scripts() {
+  wp_enqueue_script('jquery');
+  wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/jquery.bxslider/jquery.bxslider.js', array('jquery'), '1.0.0', true );
+  wp_enqueue_script( 'script2-name', get_template_directory_uri() . '/js/slider.js', array('jquery'), '1.0.0', true );
+}
+  add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+?>
+
+
