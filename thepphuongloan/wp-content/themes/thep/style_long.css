@@ -521,8 +521,8 @@ div.container div.bx-wrapper div.bx-controls div.bx-pager{
     color: #3c3c3c;
 }
 div.container div.bx-wrapper div.bx-controls-direction a.bx-prev{
-	left: -30px;
+	/*left: -30px;*/
 }
 div.container div.bx-wrapper div.bx-controls-direction a.bx-next{
-	right: -30px;
+	/*right: -30px;*/
 }
