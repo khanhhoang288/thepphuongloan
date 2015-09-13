@@ -29,7 +29,7 @@ div.header-content
 
 
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+/*@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
 	#sidebar
 	{
 		width: 20% !important;
@@ -39,7 +39,7 @@ div.header-content
 	{
 		width: 78% !important;
 	}
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+*/} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 
 @media only screen and (min-width: 64.063em) { 
