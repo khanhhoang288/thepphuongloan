@@ -42,6 +42,8 @@ div.header-content
 */} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 
+
+/*resize sidebar, main contain*/
 @media only screen and (min-width: 64.063em) { 
 	#sidebar
 	{
@@ -66,8 +68,56 @@ div.header-content
 	}
 } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) {
+	#sidebar
+	{
+		width: 20% !important;
+	}
+
+	div.content
+	{
+		width: 78% !important;
+	}
+} /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+
+/*resize copyright*/
+div.inner-wrapper div.footer-bottom{
+	line-height: 15px;
+	padding: 5px 0px; 
+} 
+
+
+/*page tin tuc*/
+
+div.post-listing div.post-thumbnail{
+	width: 155px;
+}
+
+div.page-head div.stripe-line{
+	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
+    height: 14px;
+    margin-top: 0px;
+    width: 88%;
+}
+
+li#search-box-main-nav{
+	float: right !important;
+	margin-top: 4px;
+}
+
+div.page-head h1 {
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: #ffffff;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
