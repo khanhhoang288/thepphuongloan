@@ -41,6 +41,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 
 	<a href="<?php the_permalink(); ?>">
 
+		<h3><?php the_title(); ?></h3>
 		<?php
 			/**
 			 * woocommerce_before_shop_loop_item_title hook
@@ -51,8 +52,6 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			do_action( 'woocommerce_before_shop_loop_item_title' );
 		?>
 
-		<h3><?php the_title(); ?></h3>
-
 		<?php
 			/**
 			 * woocommerce_after_shop_loop_item_title hook
@@ -61,6 +60,11 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			 */
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
+<?php
+	$product_desc = wpautop( do_shortcode( $product->get_post_data()->post_content ) );
+	$product_desc_trim = wp_trim_words( $product_desc, $num_words = 20, $more = null );
+	echo '<div>'.$product_desc_trim.'<div>';
+?>
 
 	</a>
 

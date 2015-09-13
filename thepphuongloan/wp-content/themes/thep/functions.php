@@ -70,7 +70,7 @@ function custom_list_category(){
       echo '<div>';
       echo "<div class='cat-img'><img src='{$image}' alt='' /></div>";
       echo '<div class="cat-info">';
-      echo '<div class="cat-name"><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "Xem bài viết trong %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </div> ';
+      echo '<div class="cat-name"><a href="' . get_category_link( $category ) . '" title="' . sprintf( __( "Xem bài viết trong %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </div> ';
       echo '<div class="cat-description">'. wp_trim_words( $category->description, $num_words = 55, $more = null ) . '</div>';
       echo '</div>';
       echo '</div>';

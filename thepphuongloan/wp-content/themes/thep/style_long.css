@@ -1,3 +1,10 @@
+/* FOR BODY */
+body{
+	font-size: 12px;
+    line-height: 150%;
+    font-family: arial;
+    /*color: #3c3c3c;*/
+}
 /*FOR FOOTER*/
 
 #theme-footer{
@@ -222,4 +229,63 @@ div.cat-box-content li.other-news{
 }
 div.cat-box-content li.other-news a{
 	color: #003686;
+}
+
+/* FOR SINGLE PRODUCT PAGE */
+div.content nav.woocommerce-breadcrumb{
+	display: none;
+}
+
+/* FOR PRODUCT CATEGORY DETAIL */
+div.content div.post-inner h1.page-title{
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: url(images/tpl/mid_title.gif)  repeat-x left bottom;;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+}
+div.post-inner div.term-description{
+	float: left;
+	width: 45%;
+	padding: 5px;
+}
+div.post-inner p.woocommerce-result-count{
+	display: none;
+}
+div.post-inner form{
+	display: none;
+}
+div.post-inner ul.products{
+	margin-bottom: 15px;
+}
+div.post-inner ul.products li.product{
+	width: 45%;
+	padding: 10px 0px 20px;
+	margin-bottom: 0px;
+}
+div.post-inner ul.products li.product a.button{
+	display: none;
+}
+div.post-inner ul.products  h3 {
+    font-size: 12px;
+    margin: 0px 0px 7px;
+    text-transform: uppercase;
+    color: #003686;
+    font-weight: bold;
+}
+div.post-inner ul.products div.product-img{
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+div.post-inner ul.products div.product-img img{
+	width: 90px;
+	height: 70px;
 }
