@@ -29,6 +29,9 @@ if( !tie_get_option( 'disable_arqam_lite' ) )
 
 // Add custom sourcecode
 add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
+add_shortcode( 'other_pro_cats_sc', 'other_pro_cats' );
+add_shortcode( 'btn_contact_sc', 'btn_contact' );
+
 
 // add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
 // function woocommerce_category_image() {
@@ -78,5 +81,46 @@ function custom_list_category(){
       echo '<div class="hr"></div>';
       echo '<br/>';
     }
+}
+?>
+
+<?php
+// function list_product_by_cat
+?>
+
+<?php
+function other_pro_cats(){
+  $args = array(
+    'number'     => 0,
+    'orderby' => 'name',
+    'order' => 'ASC',
+    'hide_empty' => false,
+    'include'    => $ids
+  );
+
+  $product_categories = get_terms( 'product_cat', $args );
+  $categories = $product_categories;
+  $first = key($categories);
+
+  echo '<div class="dot-dot" style="width:90%;text-align:center;margin-top:10px;"></div>';
+  echo '<div class="other-pro-cats">';
+  echo '<em>Các sản phẩm khác: </em>';
+  foreach($categories as $key => $category) {
+    end($categories);
+    echo '<span class="other-cat-name"><a href="' . get_category_link( $category )  . '">' . $category->name.'</a></span>';
+    if ($key != key($categories)){
+      echo ', ';
+    }
+  }
+  echo '</div>';
+}
+?>
+
+
+<?php
+function btn_contact(){
+  echo '<div class="btn_contact">';
+  echo '<a href="http://www.thepphuongloan.com/lien-he" title="Thông tin phản hồi mẫu" class="fancybox"><span>Tư vấn thông tin về sản phẩm</span></a>';
+  echo '</div>';
 }
 ?>

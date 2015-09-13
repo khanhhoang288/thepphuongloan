@@ -249,10 +249,34 @@ div.content div.post-inner h1.page-title{
     margin-bottom: 20px;
     width: 100%;
 }
-div.post-inner div.term-description{
+div.post-inner div.left-content{
 	float: left;
 	width: 45%;
 	padding: 5px;
+}
+div.post-inner div.pro-cat-gallery{
+	float: right;
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+}
+div.post-inner div.pro-cat-gallery div.big-thum{
+	width: 300px;
+	height: 250px;
+	border: 1px solid #cccccc;
+}
+div.post-inner div.pro-cat-gallery div.small-thums{
+	text-align: center;
+}
+div.post-inner div.pro-cat-gallery div.small-thum{
+	display: inline-block;
+    margin: 5px;
+    margin-bottom: 10px;
+    float: left;
+    width: 89px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #cccccc;
 }
 div.post-inner p.woocommerce-result-count{
 	display: none;
@@ -288,4 +312,29 @@ div.post-inner ul.products div.product-img{
 div.post-inner ul.products div.product-img img{
 	width: 90px;
 	height: 70px;
+}
+
+/* FOR SHORTCODE OTHER PRODUCT CATEGORIES*/
+div.other-pro-cats span.other-cat-name a{
+	color: #ff0000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+/* FOR SHORTCODE CONTACT BUTTON*/
+div.btn_contact a {
+    display: inline-block;
+    background: url(images/tpl/btn_contact_pro.png) no-repeat left top;
+    height: 35px;
+    line-height: 33px;
+    padding-left: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+div.btn_contact a span {
+    display: inline-block;
+    background: url(images/tpl/btn_contact_pro.png) no-repeat right -36px;
+    height: 35px;
+    padding-right: 29px;
 }
