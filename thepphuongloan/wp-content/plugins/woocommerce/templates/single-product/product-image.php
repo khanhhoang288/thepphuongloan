@@ -46,4 +46,7 @@ global $post, $woocommerce, $product;
 
 	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
 
+	<br/>
+	<?php echo do_shortcode("[btn_contact_sc]"); ?>
+	
 </div>

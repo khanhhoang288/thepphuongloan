@@ -437,3 +437,50 @@ div.hotline td.l-span{
 	width: 50px;
 	font-weight: bold;
 }
+
+
+/* FOR PRODUCT DETAIL */
+div.content div.post-inner div.product h1.entry-title{
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: url(images/tpl/mid_title.gif)  repeat-x left bottom;;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+}
+div.post-inner div.product div.woocommerce-tabs.wc-tabs-wrapper{
+	float: left;
+	width: 55%;
+	padding: 5px;
+}
+div.post-inner div.product div.woocommerce-tabs.wc-tabs-wrapper ul.wc-tabs{
+	display: none;
+}
+div.post-inner div.product div.woocommerce-tabs.wc-tabs-wrapper div.entry-content h2{
+	display: none;
+}
+div.post-inner div.product div.related.products h2{
+	display: none;
+}
+div.post-inner div.product div.images{
+	float: right;
+	width: 40%;
+	padding: 5px;
+	text-align: center;
+	clear: none;
+}
+div.post-inner div.product span.posted_in a{
+	font-weight: bold;
+	color: blue;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 11px;
+}
+div.post-inner div.product div.woocommerce-tabs div.panel{
+	float: none;
+	padding-top: 20px;
+}

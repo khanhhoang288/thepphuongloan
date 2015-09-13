@@ -117,7 +117,6 @@ function other_pro_cats(){
 }
 ?>
 
-F`
 <?php
 function btn_contact(){
   echo '<div class="btn_contact">';
