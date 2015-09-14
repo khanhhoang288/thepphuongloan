@@ -14,7 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-	<?php echo do_shortcode("[slider_list_category_sc]") ?>
+	<?php 
+		// echo do_shortcode("[slider_list_category_sc]")
+	?>
 
 	<?php
 		/**
@@ -43,32 +45,9 @@ get_header( 'shop' ); ?>
 			echo do_shortcode("[other_pro_cats_sc]");
 		?>
 		</div>
-		<!-- Product Category Thumbnail & Gallery -->
-		<div class="pro-cat-gallery">
-			<div class="big-thum">
-				<?php
-					$category = get_queried_object();
-					$thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ); 
-			      	// get the image URL
-			      	$image = wp_get_attachment_url( $thumbnail_id ); 
-			      	echo "<img src='{$image}' alt='' />";
-				?>
-			</div>
-			<br/>
-			<div class="small-thums">
-			<?php
-				for ($x = 0; $x <= 5; $x++) {
-					echo '<div class="small-thum">';
-    				echo "<img src='{$image}' alt='' />";
-    				echo '</div>';
-				} 
-			?>
-			<div class="clear"></div>
-			<br/>
-			<?php echo do_shortcode("[btn_contact_sc]"); ?>
-			</div>
-		</div>
-		<div class="clear"></div>
+		
+		<?php echo '<div class="clear"></div>'; ?>
+
 		<br/>
 		<h1 class="page-title">SẢN PHẨM</h1>
 		<!-- <div class="dot-dot" style="width:90%;text-align:center;margin-top:20px;"></div> -->

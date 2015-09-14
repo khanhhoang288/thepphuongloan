@@ -527,7 +527,30 @@ if ( ! function_exists( 'woocommerce_taxonomy_archive_description' ) ) {
 		if ( is_tax( array( 'product_cat', 'product_tag' ) ) && get_query_var( 'paged' ) == 0 ) {
 			$description = wc_format_content( term_description() );
 			if ( $description ) {
-				echo '<div class="term-description">' . $description . '</div>';
+				echo '<div class="term-description">';
+				// <!-- Product Category Thumbnail & Gallery -->
+		
+				echo '<div class="pro-cat-gallery">';
+					echo '<div class="big-thum">';
+					$category = get_queried_object();
+					$thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ); 
+			      	// get the image URL
+			      	$image = wp_get_attachment_url( $thumbnail_id ); 
+			      	echo "<img src='{$image}' alt='' />";
+					echo '</div>';
+					echo '<br/>';
+					echo '<div class="small-thums">';
+						for ($x = 0; $x < 0; $x++) {
+							echo '<div class="small-thum">';
+		    				echo "<img src='{$image}' alt='' />";
+		    				echo '</div>';
+						} 
+					echo '<br/>';
+					echo do_shortcode("[btn_contact_sc]");
+					echo '</div>';
+				echo '</div>';
+				
+				echo $description . '</div>';
 			}
 		}
 	}

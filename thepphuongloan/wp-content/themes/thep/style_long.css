@@ -36,8 +36,8 @@ body{
 	width: 20%;
 }
 .cat-img img{
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 100%;
+	max-height: 100%;
 }
 .cat-info{
 	float: right;
@@ -153,6 +153,11 @@ div.widget div.widget-container ul li a{
   top: 2px;
   left: 0px;
 }
+div.widget div.widget-container ul li.current-cat a{
+	/*text-decoration: underline;*/
+	color: blue;
+	font-style: italic;
+}
 
 /* FOR NEWS */
 div#breaking-news{
@@ -253,7 +258,7 @@ div.content div.post-inner h1.page-title{
 }
 div.post-inner div.left-content{
 	float: left;
-	width: 45%;
+	width: 100%;
 	padding: 5px;
 }
 div.post-inner div.pro-cat-gallery{
@@ -263,8 +268,8 @@ div.post-inner div.pro-cat-gallery{
 	text-align: center;
 }
 div.post-inner div.pro-cat-gallery div.big-thum{
-	width: 300px;
-	height: 250px;
+	max-width: 300px;
+	max-height: 250px;
 	border: 1px solid #cccccc;
 }
 div.post-inner div.pro-cat-gallery div.small-thums{
@@ -314,6 +319,9 @@ div.post-inner ul.products div.product-img{
 div.post-inner ul.products div.product-img img{
 	width: 90px;
 	height: 70px;
+}
+div.other-pro-cats{
+	width: 80%;
 }
 
 /* FOR SHORTCODE OTHER PRODUCT CATEGORIES*/
@@ -483,6 +491,7 @@ div.post-inner div.product span.posted_in a{
 }
 div.post-inner div.product div.woocommerce-tabs div.panel{
 	float: none;
+	width: 100%;
 	padding-top: 20px;
 }
 /* FOR PRODUCT CATEGORY SLIDER */
@@ -525,4 +534,10 @@ div.container div.bx-wrapper div.bx-controls-direction a.bx-prev{
 }
 div.container div.bx-wrapper div.bx-controls-direction a.bx-next{
 	/*right: -30px;*/
+}
+
+/* FOR MENU & SUBMENU */
+nav#main-nav div.container div.main-menu ul.sub-menu > li.menu-{
+	background-color: #168eba !important;
+	border-bottom-color: white;
 }

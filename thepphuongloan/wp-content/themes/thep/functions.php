@@ -62,7 +62,7 @@ function custom_list_category(){
   $product_categories = get_terms( 'product_cat', $args );
   $categories = $product_categories;
     echo '<div class="cat-title">';
-    echo '<div class="float-l">Sản Phẩm</div>';
+    echo '<div class="float-l">Nhóm Sản Phẩm</div>';
     echo '<div class="float-r dot-dot" style="width:85%"></div>';
     echo '</div>';
     echo '<div class="clear">'.'</div>';
@@ -172,7 +172,7 @@ function slider_list_category(){
   $product_categories = get_terms( 'product_cat', $args );
   $categories = $product_categories;
     echo '<div class="cat-title">';
-    echo '<div class="float-l">Sản Phẩm</div>';
+    echo '<div class="float-l">NhómSản Phẩm</div>';
     echo '<div class="float-r dot-dot" style="width:85%"></div>';
     echo '</div>';
     echo '<div class="clear">'.'</div>';
@@ -206,5 +206,3 @@ function theme_name_scripts() {
 }
   add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 ?>
-
-
