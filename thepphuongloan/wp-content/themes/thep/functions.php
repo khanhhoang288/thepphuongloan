@@ -29,6 +29,8 @@ if( !tie_get_option( 'disable_arqam_lite' ) )
 
 // Add custom sourcecode
 add_shortcode( 'custom_list_category_sc', 'custom_list_category' );
+add_shortcode( 'custom_list_category_with_products_sc', 'custom_list_category_with_products' );
+
 add_shortcode( 'slider_list_category_sc', 'slider_list_category' );
 add_shortcode( 'other_pro_cats_sc', 'other_pro_cats' );
 add_shortcode( 'btn_contact_sc', 'btn_contact' );
@@ -66,7 +68,7 @@ function custom_list_category(){
   $categories = $product_categories;
     echo '<div class="cat-title">';
     echo '<div class="float-l">Nhóm Sản Phẩm</div>';
-    echo '<div class="float-r dot-dot" style="width:85%"></div>';
+    echo '<div class="float-r dot-dot" style="width:80%"></div>';
     echo '</div>';
     echo '<div class="clear">'.'</div>';
     foreach($categories as $category) {
@@ -83,6 +85,71 @@ function custom_list_category(){
       echo '</div>';
       echo '</div>';
       echo '<div class="clear">'.'</div>';
+      echo '<div class="hr"></div>';
+      echo '<br/>';
+    }
+}
+?>
+
+<?php
+function custom_list_category_with_products(){
+  $args = array(
+    'number'     => 0,
+    'orderby' => 'name',
+    'order' => 'ASC',
+    'hide_empty' => false,
+    'include'    => $ids
+  );
+
+  $product_categories = get_terms( 'product_cat', $args );
+  $categories = $product_categories;
+    echo '<div class="cat-title">';
+    echo '<div class="float-l">Nhóm Sản Phẩm</div>';
+    echo '<div class="float-r dot-dot" style="width:80%"></div>';
+    echo '</div>';
+    echo '<div class="clear">'.'</div>';
+    foreach($categories as $category) {
+      // get the thumbnail id user the term_id
+      $thumbnail_id = get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true ); 
+      // get the image URL
+      $image = wp_get_attachment_url( $thumbnail_id ); 
+    
+      echo '<div>';
+      echo "<div class='cat-img'><img src='{$image}' alt='' /></div>";
+      echo '<div class="cat-info">';
+      echo '<div class="cat-name"><a href="' . get_category_link( $category ) . '" title="' . sprintf( __( "Xem bài viết trong %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </div> ';
+      echo '<div class="cat-description">'. wp_trim_words( $category->description, $num_words = 55, $more = null ) . '</div>';
+      echo '</div>';
+      echo '</div>';
+      echo '<div class="clear">'.'</div>';
+      echo '<br/>';
+
+      $args = array(
+            'posts_per_page' => 5,
+            'tax_query' => array(
+                'relation' => 'AND',
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field' => 'slug',
+                    // 'terms' => 'white-wines'
+                    'terms' => $category->slug
+                )
+            ),
+            'post_type' => 'product',
+            'orderby' => 'rand'
+        );
+        $products = new WP_Query( $args);
+        if ($products->have_posts()){
+          echo "<div class='post-inner inside'>";
+          echo "<ul class='products'>";
+          while ( $products->have_posts() ) {
+              $products->the_post();
+                  wc_get_template_part( 'content', 'product' );
+          }
+          echo "</ul>";
+          echo "</div>";
+        }
+
       echo '<div class="hr"></div>';
       echo '<br/>';
     }

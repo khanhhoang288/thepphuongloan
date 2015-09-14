@@ -46,7 +46,7 @@ footer div.footer-widget-top{
 /* FOR CATEGORY LIST CUSTOM */
 .cat-img{
 	float: left;
-	width: 20%;
+	width: 15%;
 }
 .cat-img img{
 	max-width: 100%;
@@ -90,7 +90,7 @@ footer div.footer-widget-top{
 .hr {
     border-top: 1px dotted #cccccc;
     height: 20px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .dot-dot{
 	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
@@ -170,6 +170,16 @@ div.widget div.widget-container ul li.current-cat a{
 	/*text-decoration: underline;*/
 	color: blue;
 	font-style: italic;
+}
+div.post-inner.inside ul li > div{
+	display: none;
+}
+div.post-inner.inside ul.products li.product{
+	width: 15%;
+}
+div.post-inner.inside ul.products h3 {
+    font-size: 10px;
+    font-style: italic;
 }
 
 /* FOR NEWS */
