@@ -29,6 +29,19 @@ body{
 #theme-footer .footer-widget-container td.yellow-text{
 	color: #ffcc00;	
 }
+div.soso-content div.banner_item {
+    float: left;
+    padding-left: 10px;
+   	/*width: 20px;*/
+    /*height: 20px;*/
+    overflow: hidden;
+}
+footer div.footer-widget-container{
+	border-top: none;
+}
+footer div.footer-widget-top{
+	border-bottom: none;
+}
 
 /* FOR CATEGORY LIST CUSTOM */
 .cat-img{
@@ -438,7 +451,7 @@ div.hotline{
 }
 div.hotline table tr td{
 	text-align: left;
-	font-size: 12px;
+	font-size: 11px;
     font-family: arial;
     color: #3c3c3c;
 }
