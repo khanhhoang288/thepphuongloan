@@ -592,3 +592,9 @@ nav#main-nav div.container div.main-menu ul.sub-menu > li.menu-{
 	background-color: #168eba !important;
 	border-bottom-color: white;
 }
+nav#main-nav.fixed-nav.fixed-nav-appear {
+	zoom: 0.75;
+}
+nav#main-nav.fixed-nav {
+	zoom: 1;
+}
