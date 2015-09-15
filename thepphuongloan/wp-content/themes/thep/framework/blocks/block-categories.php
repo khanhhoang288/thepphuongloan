@@ -65,7 +65,7 @@
 							<div class="post-thumbnail">
 								<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'tie-small' ); ?><span class="fa overlay-icon"></span></a>
 							</div><!-- post-thumbnail /-->
-						<?php endif; ?>			
+						<?php endif; ?>		
 						<h3 class="post-box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 						<?php get_template_part( 'framework/parts/meta-blocks' ); ?>					
 					</li>
@@ -116,8 +116,16 @@
 							<div class="post-thumbnail">
 								<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'tie-small' ); ?><span class="fa overlay-icon"></span></a>
 							</div><!-- post-thumbnail /-->
-						<?php endif; ?>			
-						<h3 class="post-box-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+						<?php endif; ?>
+						<h3 class="post-box-title">
+							<?php if ($cat_title == 'Đối Tác' || $cat_title == 'Khách hàng' || $cat_title == 'Đối tác' || $cat_title == 'Khách Hàng' || $cat_title == 'ĐỐI TÁC' || $cat_title == 'KHÁCH HÀNG') : ?>
+								<?php the_title(); ?>
+							<?php else: ?>
+								<a href="<?php the_permalink(); ?>" rel="bookmark">
+									<?php the_title(); ?>
+								</a>
+							<?php endif; ?>
+						</h3>
 						<?php get_template_part( 'framework/parts/meta-blocks' ); ?>					
 					</li>
 					<?php endif; ?>
