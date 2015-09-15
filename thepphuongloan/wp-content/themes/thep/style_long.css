@@ -231,16 +231,21 @@ div#breaking-news span.breaking-news-title{
 }
 
 /* FOR MODULE CATEGORY NEWS*/
-div.widget.categort-posts div.widget-container img{
+#sidebar div.widget.arpw-widget-random div.widget-container{
+	padding: 5px 10px;
+}
+div.widget.arpw-widget-random div.widget-container img.wp-post-image{
 	width: 72px;
 	height: 50px;
+	margin: 5px 5px 5px 0px;
 }
-div.widget.categort-posts div.widget-container li{
+div.widget.arpw-widget-random div.widget-container li{
 	padding: 5px !important;
 }
-div.widget.categort-posts div.widget-container a{
+div.widget.arpw-widget-random div.widget-container a{
 	padding: 0px;
 	font-weight: normal;
+	font-size: 11px;
 }
 
 /* FOR CONTENT IN MAIN CLIENT */
@@ -277,6 +282,9 @@ div.cat-box-content li.other-news{
     height: 100px;
 }
 div.cat-box-content li.other-news a{
+	color: #003686;
+}
+div.cat-box-content li.other-news h3{
 	color: #003686;
 }
 
@@ -417,7 +425,7 @@ section.column2 div.content div.cat-box-content{
 }
 section.column2 div.cat-box-content li.other-news{
     float: left;
-    width: 100%;
+    width: 46%;
     border: 2px solid #dbdbdb;
     border-top: none;
     border-right: none;
@@ -429,10 +437,11 @@ section.column2 div.cat-box-content li.other-news a{
 }
 div.content section.column2{
 	float: left;
-	width: 40%;
+	width: 100%;
 }
 div.content .home-e3lan {
     clear: none;
+    display: none;
     float: right;
     /*width: 55%;*/
     padding-right: 10px;
@@ -466,11 +475,11 @@ form div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
     padding: 5px 6px;
 }
 .box_support .row {
-    padding: 5px 0px 8px;
+    /*padding: 5px 0px 8px;*/
  }
  .box_support .row .yahoo {
     float: left;
-    padding-top: 4px;
+    padding-top: 2px;
 }
 .box_support .row .skype {
     float: right;
