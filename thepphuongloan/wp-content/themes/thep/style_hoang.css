@@ -208,5 +208,10 @@ div.post-listing h2.post-box-title a{
 div.content div.home-e3lan div.fluid-width-video-wrapper{
 	width: 75%;
 	margin: auto;
-	margin-top: 20px;
+	height: 75%;
+	margin-bottom: -70px;
+}
+
+div.content div.home-e3lan div.fluid-width-video-wrapper iframe{
+	height: 75%;
 }
