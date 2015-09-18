@@ -122,6 +122,21 @@ div.block-head h3{
     margin-top: 5px;
 }
 
+div.related-item div.post-thumbnail img{
+	float: left;
+    margin-right: 15px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    width: 90px;
+    height: 70px;
+}
+
+#related_posts div.post-listing div.related-item{
+	width: 45%;
+	height: auto;
+}
+
 li#search-box-main-nav{
 	float: right !important;
 	margin-top: 4px;
