@@ -176,3 +176,8 @@ div.post-listing h2.post-box-title a{
 	display: none;
 }
 
+
+div.content div.home-e3lan div.fluid-width-video-wrapper{
+	width: 80%;
+	margin: auto;
+}
