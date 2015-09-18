@@ -53,7 +53,6 @@ add_shortcode( 'get_image_url_sc', 'get_image_url' );
 // 	}
 // }
 ?>
-
 <?php
 function custom_list_category(){
   $args = array(
@@ -90,7 +89,6 @@ function custom_list_category(){
     }
 }
 ?>
-
 <?php
 function custom_list_category_with_products(){
   $args = array(
@@ -155,11 +153,9 @@ function custom_list_category_with_products(){
     }
 }
 ?>
-
 <?php
 // function list_product_by_cat
 ?>
-
 <?php
 function other_pro_cats(){
   $args = array(
@@ -187,7 +183,6 @@ function other_pro_cats(){
   echo '</div>';
 }
 ?>
-
 <?php
 function btn_contact(){
   echo '<div class="btn_contact">';
@@ -195,7 +190,6 @@ function btn_contact(){
   echo '</div>';
 }
 ?>
-
 <?php
 function online_support(){
   echo '<div class="box-content">';
@@ -228,7 +222,6 @@ function online_support(){
   echo '</div>';
 }
 ?>
-
 <?php
 function slider_list_category(){
   $args = array(
@@ -264,7 +257,6 @@ function slider_list_category(){
     echo '</div>';
 }
 ?>
-
 <?php
 /**
  * Proper way to enqueue scripts and styles
@@ -276,7 +268,6 @@ function theme_name_scripts() {
 }
   add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 ?>
-
 <?php
   function wp_statistics_useronline_ft(){
     return sprintf('%06d', wp_statistics_useronline());
@@ -288,7 +279,6 @@ function theme_name_scripts() {
     return sprintf('%06d', 500000 + wp_statistics_visit('total'));
   }
 ?>
-
 <?php
 function get_image_url(){
   return get_stylesheet_directory_uri();
