@@ -441,7 +441,7 @@ div.content section.column2{
 }
 div.content .home-e3lan {
     clear: none;
-    display: none;
+    /*display: none;*/
     float: right;
     /*width: 55%;*/
     padding-right: 10px;
@@ -588,7 +588,7 @@ div.container div.bx-wrapper div.bx-controls-direction a.bx-next{
 }
 
 /* FOR MENU & SUBMENU */
-nav#main-nav div.container div.main-menu ul.sub-menu > li.menu-{
+nav#main-nav div.container div.main-menu ul.sub-menu > li.menu-item{
 	background-color: #168eba !important;
 	border-bottom-color: white;
 }

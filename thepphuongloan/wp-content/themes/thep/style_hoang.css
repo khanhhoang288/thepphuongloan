@@ -101,8 +101,25 @@ div.post-listing div.post-thumbnail{
 div.page-head div.stripe-line{
 	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
     height: 14px;
-    margin-top: 0px;
-    width: 88%;
+    margin-top: 5px;
+    width: 75%;
+    float: right;
+}
+
+div.block-head div.stripe-line{
+	background: url(images/tpl/mid_title.gif) repeat-x left bottom;
+    height: 14px;
+    margin-top: 5px;
+    width: 80%;
+    float: right;
+}
+
+div.block-head h3{
+	color: #2363c9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 li#search-box-main-nav{
@@ -119,5 +136,43 @@ div.page-head h1 {
     background: #ffffff;
     padding-right: 12px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    margin-top: 5px;
 }
+
+div.share-post span.share-text{
+	font-family: arial;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+}
+
+div.post-inner h1{
+	color: #dc1206;
+    font-size: 14px;
+    height: 18px;
+    font-weight: bold;
+    float: left;
+    background: url(images/tpl/mid_title.gif) repeat-x left bottom;
+    padding-right: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+div.post-inner p.post-meta{
+	display: none;
+}
+
+
+div.post-listing h2.post-box-title a{
+	color: #003686;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#crumbs{
+	display: none;
+}
+
