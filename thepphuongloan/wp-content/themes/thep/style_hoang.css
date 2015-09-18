@@ -95,7 +95,20 @@ div.inner-wrapper div.footer-bottom{
 /*page tin tuc*/
 
 div.post-listing div.post-thumbnail{
-	width: 155px;
+	float: left;
+    width: 15%;
+}
+
+div.post-listing div.entry a.more-link{
+	float: right;
+}
+
+div.post-listing .item-list{
+	border: 2px solid #dbdbdb;
+	padding: 5px;
+	border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 div.page-head div.stripe-line{
@@ -193,6 +206,7 @@ div.post-listing h2.post-box-title a{
 
 
 div.content div.home-e3lan div.fluid-width-video-wrapper{
-	width: 80%;
+	width: 75%;
 	margin: auto;
+	margin-top: 20px;
 }
