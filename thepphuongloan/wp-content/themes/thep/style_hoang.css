@@ -150,6 +150,11 @@ div.related-item div.post-thumbnail img{
 	height: auto;
 }
 
+#related_posts div.post-listing div.related-item div.post-thumbnail{
+	width: 25%;
+	margin-right: 10px;
+}
+
 li#search-box-main-nav{
 	float: right !important;
 	margin-top: 4px;
