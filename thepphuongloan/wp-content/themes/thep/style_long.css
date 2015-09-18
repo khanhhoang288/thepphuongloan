@@ -439,13 +439,13 @@ div.content section.column2{
 	float: left;
 	width: 100%;
 }
-div.content .home-e3lan {
-    clear: none;
-    /*display: none;*/
-    float: right;
+div.content .home-e3lan div.wpcf7{
+    /*clear: none;*/
+    display: none;
+    /*float: right;*/
     /*width: 55%;*/
-    padding-right: 10px;
-    text-align: left;
+    /*padding-right: 10px;*/
+    /*text-align: left;*/
 }
 div.list_comment-title {
     color: #DC1206;
