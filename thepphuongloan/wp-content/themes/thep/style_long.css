@@ -42,7 +42,7 @@ div#main-content .cat-box-content, #sidebar .widget-container, .post-listing, #c
 #theme-footer div div span{
 }
 #theme-footer .footer-widget-container td.yellow-text{
-	color: #ffcc00;	
+	color: #ffcc00;
 }
 div.soso-content div.banner_item {
     float: left;
@@ -597,4 +597,11 @@ nav#main-nav.fixed-nav.fixed-nav-appear {
 }
 nav#main-nav.fixed-nav {
 	zoom: 1;
+}
+#main-nav ul li a:hover, #main-nav ul ul a:hover, #main-nav ul.sub-menu a:hover, #main-nav ul li.current_page_parent ul a:hover, #main-nav ul li.current-menu-item ul a:hover, #main-nav ul li.current-menu-parent ul a:hover, #main-nav ul li.current-page-ancestor ul li > a:hover{
+color: #fffb01 !important;
+}
+
+#main-nav div.main-menu ul.menu li ul li.current-menu-item{
+border-width: 0px 0px 1px 0px !important;
 }
