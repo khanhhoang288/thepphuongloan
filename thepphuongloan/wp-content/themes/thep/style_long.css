@@ -480,9 +480,12 @@ form div.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
  .box_support .row .yahoo {
     float: left;
     padding-top: 2px;
+    margin: auto;
 }
 .box_support .row .skype {
-    float: right;
+    float: left;
+    margin: auto;
+    padding-left: 15px;
 }
 div.hotline{
 	padding-top: 5px;
@@ -599,9 +602,9 @@ nav#main-nav.fixed-nav {
 	zoom: 1;
 }
 #main-nav ul li a:hover, #main-nav ul ul a:hover, #main-nav ul.sub-menu a:hover, #main-nav ul li.current_page_parent ul a:hover, #main-nav ul li.current-menu-item ul a:hover, #main-nav ul li.current-menu-parent ul a:hover, #main-nav ul li.current-page-ancestor ul li > a:hover{
-color: #fffb01 !important;
+    color: #fffb01 !important;
 }
 
 #main-nav div.main-menu ul.menu li ul li.current-menu-item{
-border-width: 0px 0px 1px 0px !important;
+    border-width: 0px 0px 1px 0px !important;
 }
