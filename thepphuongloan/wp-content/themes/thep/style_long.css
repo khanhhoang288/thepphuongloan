@@ -194,7 +194,8 @@ div.post-inner.inside ul li > div{
 	display: none;
 }
 div.post-inner.inside ul.products li.product{
-	width: 15%;
+	width: 30%;
+    /*float: left;*/
 }
 div.post-inner.inside ul.products h3 {
     font-size: 10px;
