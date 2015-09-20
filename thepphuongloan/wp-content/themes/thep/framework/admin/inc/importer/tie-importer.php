@@ -2,17 +2,17 @@
 function tie_set_demo_data(){
 	$theme_options = get_option( 'tie_options' );
 	
-	$theme_options['social']['facebook'] = 'https://www.facebook.com/TieLabs';
-	$theme_options['social']['twitter'] = 'https://twitter.com/TieLabs';
-	$theme_options['social']['dribbble'] = 'http://dribbble.com/mo3aser';
-	$theme_options['social']['foursquare'] = 'https://foursquare.com/mo3aser';
-	$theme_options['social']['Pinterest'] = 'http://www.pinterest.com/mo3aser/';
-	$theme_options['social']['instagram'] = 'http://instagram.com/imo3aser';
+	$theme_options['social']['facebook'] = 'https://www.facebook.com/';
+	$theme_options['social']['twitter'] = 'https://twitter.com/';
+	$theme_options['social']['dribbble'] = 'http://dribbble.com/';
+	$theme_options['social']['foursquare'] = 'https://foursquare.com/';
+	$theme_options['social']['Pinterest'] = 'http://www.pinterest.com//';
+	$theme_options['social']['instagram'] = 'http://instagram.com/';
 	
 	$theme_options['footer_widgets'] = 'footer-4c';
 	$theme_options['banner_top'] = $theme_options['banner_bottom'] = true;
-	$theme_options['banner_top_img'] = $theme_options['banner_bottom_img'] = 'http://themes.tielabs.com/data/banners/sahifa-728.jpg';
-	$theme_options['banner_top_url'] = $theme_options['banner_bottom_url'] = 'http://themeforest.net/item/sahifa-responsive-wordpress-newsmagazineblog/2819356?ref=tielabs';
+	$theme_options['banner_top_img'] = $theme_options['banner_bottom_img'] = '#';
+	$theme_options['banner_top_url'] = $theme_options['banner_bottom_url'] = '#';
 	
 	update_option( 'tie_options' , $theme_options );
 
@@ -152,9 +152,9 @@ function tie_set_demo_data(){
 	//Import Widgets
 	update_option('sidebars_widgets', '');
 	
-	tie_addWidgetToSidebar( 'primary-widget-area' , 'counter-widget', 0, array('facebook' => 'https://www.facebook.com/TieLabs','youtube' => 'http://www.youtube.com/user/TEAMMESAI','vimeo' => 'http://vimeo.com/channels/kidproof'));
+	tie_addWidgetToSidebar( 'primary-widget-area' , 'counter-widget', 0, array('facebook' => 'https://www.facebook.com/','youtube' => 'http://www.youtube.com/','vimeo' => 'http://vimeo.com/'));
 	tie_addWidgetToSidebar( 'primary-widget-area' , 'widget_tabs', 0);
-	tie_addWidgetToSidebar( 'primary-widget-area' , 'facebook-widget', 0, array('title' => 'Find us on Facebook', 'page_url' => 'https://www.facebook.com/TieLabs'));
+	tie_addWidgetToSidebar( 'primary-widget-area' , 'facebook-widget', 0, array('title' => 'Find us on Facebook', 'page_url' => 'https://www.facebook.com/'));
 	tie_addWidgetToSidebar( 'primary-widget-area' , 'social', 0, array('title' => 'Social', 'tran_bg' => true, 'icons_size' => 32 ));
 	tie_addWidgetToSidebar( 'primary-widget-area' , 'youtube-widget', 0, array('title' => 'Subscribe to our Channel', 'page_url' => 'TEAMMESAI'));
 	tie_addWidgetToSidebar( 'primary-widget-area' , 'login-widget', 0, array('title' => ' Login'));

@@ -523,7 +523,7 @@ class WP_Import extends WP_Importer {
 	 */
 	function process_posts() {
 		foreach ( $this->posts as $post ) {
-			if ( ! post_type_exists( $post['post_type'] ) && ( $post['post_type'] != 'product' )  && ( $post['post_type'] != 'topic' )  && ( $post['post_type'] != 'reply' ) && ( $post['post_type'] != 'forum' ) ) { //Edited by Tielabs
+			if ( ! post_type_exists( $post['post_type'] ) && ( $post['post_type'] != 'product' )  && ( $post['post_type'] != 'topic' )  && ( $post['post_type'] != 'reply' ) && ( $post['post_type'] != 'forum' ) ) {
 				printf( __( 'Failed to import &#8220;%s&#8221;: Invalid post type %s', 'tie' ),
 					esc_html($post['post_title']), esc_html($post['post_type']) );
 				echo '<br />';

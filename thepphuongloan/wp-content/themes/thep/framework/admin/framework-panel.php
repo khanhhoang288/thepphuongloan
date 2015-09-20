@@ -78,13 +78,10 @@ function tie_add_admin() {
 	$icon = get_template_directory_uri().'/framework/admin/images/tie.png';
 	add_menu_page( THEME_NAME , THEME_NAME ,'switch_themes', 'panel' , 'tie_panel_options', $icon  );
 	$theme_page = add_submenu_page('panel', __( 'Theme Settings', 'tie' ), __( 'Theme Settings', 'tie' ) ,'switch_themes', 'panel' , 'tie_panel_options');
-	add_submenu_page('panel',  __( 'Import Demo Data', 'tie' ), __( 'Import Demo Data', 'tie' ),'switch_themes', 'tie_demo_installer' , 'tie_demo_installer');
-	add_submenu_page('panel', __( 'Documentation', 'tie' ), __( 'Documentation', 'tie' ) ,'switch_themes', 'docs' , 'redirect_docs');
-	add_submenu_page('panel', __( 'Support', 'tie' ), __( 'Support', 'tie' ) ,'switch_themes', 'support' , 'tie_get_support');
 
 
 	function tie_get_support(){
-		echo "<script type='text/javascript'>window.location='http://support.tielabs.com/';</script>";
+		echo "<script type='text/javascript'>window.location='".SUPPORT_URL."';</script>";
 	}
 	
 	function redirect_docs(){
@@ -195,7 +192,7 @@ $save='
 <div class="mo-panel">
 
 	<div class="mo-panel-tabs">
-		<a href="http://tielabs.com/" target="_blank" class="tie-logo"></a>
+		<a href="#" target="_blank" class="tie-logo"></a>
 		<ul>
 			<li class="tie-tabs general"><a href="#tab1"><span class="dashicons-before dashicons-admin-settings tie-icon-menu"></span><?php _e( 'General Settings', 'tie' ) ?></a></li>
 			<li class="tie-tabs header"><a href="#tab9"><span class="dashicons-before dashicons-schedule tie-icon-menu"></span><?php _e( 'Header Settings', 'tie' ) ?></a></li>
@@ -209,8 +206,6 @@ $save='
 			<li class="tie-tabs translations"><a href="#tab20"><span class="dashicons-before dashicons-editor-textcolor tie-icon-menu"></span><?php _e( 'Translations', 'tie' ) ?></a></li>
 			<li class="tie-tabs Social"><a href="#tab4"><span class="dashicons-before dashicons-networking tie-icon-menu"></span><?php _e( 'Social Networking', 'tie' ) ?></a></li>
 			<li class="tie-tabs advanced"><a href="#tab10"><span class="dashicons-before dashicons-admin-tools tie-icon-menu"></span><?php _e( 'Advanced', 'tie' ) ?></a></li>
-			<li class="tie-tabs tie-rate tie-not-tab"><a target="_blank" href="http://themeforest.net/downloads?ref=tielabs"><span class="dashicons-before dashicons-star-filled tie-icon-menu"></span><?php _e( 'Rate', 'tie' ) ?> <?php echo THEME_NAME ?></a></li>
-			<li class="tie-tabs tie-more tie-not-tab"><a target="_blank" href="http://themeforest.net/user/tielabs/portfolio?ref=tielabs"><span class="dashicons-before dashicons-art tie-icon-menu"></span><?php _e( 'More Themes', 'tie' ) ?></a></li>
 		</ul>
 		<div class="clear"></div>
 	</div> <!-- .mo-panel-tabs -->

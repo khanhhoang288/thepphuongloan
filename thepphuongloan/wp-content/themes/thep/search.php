@@ -25,7 +25,7 @@
 		<?php else : ?>
 			<div id="post-0" class="post not-found post-listing">
 				<div class="entry">
-					<p><?php _eti( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.' ); ?></p>
+					<p><?php _eti( 'Không có kết quả tìm kiếm nào phù hợp. Bạn hãy thử tìm với một từ khoá khác.' ); ?></p>
 				</div>
 			</div>
 		<?php endif; ?>

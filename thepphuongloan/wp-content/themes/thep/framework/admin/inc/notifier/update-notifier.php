@@ -1,14 +1,4 @@
 <?php
-/**************************************************************
- *                                                            *
- *   Provides a notification to the user everytime            *
- *   your WordPress theme is updated                          *
- *                                                            *
- *   Author: Joao Araujo                                      *
- *   Profile: http://themeforest.net/user/unisphere           *
- *   Follow me: http://twitter.com/unispheredesign            *
- *                                                            *
- **************************************************************/
 
 if( tie_get_option('notify_theme') && is_admin() ):
 

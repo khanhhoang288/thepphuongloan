@@ -1,11 +1,12 @@
 <?php
 
-define ('THEME_NAME',	"Sahifa" );
-define ('THEME_FOLDER',	"sahifa" );
-define ('THEME_VER', 	5 );
+define ('THEME_NAME',	"ANC" );
+define ('THEME_FOLDER',	"ANC" );
+define ('THEME_VER', 	1 );
 
-define( 'NOTIFIER_XML_FILE', "http://themes.tielabs.com/xml/".THEME_FOLDER.".xml" );
-define( 'DOCUMENTATION_URL', "http://themes.tielabs.com/docs/".THEME_FOLDER );
+define( 'NOTIFIER_XML_FILE', "#" );
+define( 'DOCUMENTATION_URL', "#");
+define( 'SUPPORT_URL', "#");
 
 if ( ! isset( $content_width ) ) $content_width = 618;
 
