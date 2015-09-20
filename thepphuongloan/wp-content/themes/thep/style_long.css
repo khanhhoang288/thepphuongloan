@@ -12,7 +12,7 @@ div#wrapper div.inner-wrapper div#main-content{
 }
 div#main-content div.content{
 	background-color: white !important;
-	padding: 0px 10px;
+	padding: 5px 10px;
 }
 div#main-content .cat-box-content, #sidebar .widget-container, .post-listing, #commentform{
 	-webkit-box-shadow: none;

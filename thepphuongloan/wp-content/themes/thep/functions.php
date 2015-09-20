@@ -284,3 +284,19 @@ function get_image_url(){
   return get_stylesheet_directory_uri();
 }
 ?>
+<?php
+// Exclude Doi tac & Khach hang from Search page
+/* Exclude a Category from Search Results */
+
+add_filter( 'pre_get_posts' , 'search_exc_cats' );
+function search_exc_cats( $query ) {
+
+  if( $query->is_admin )
+    return $query;
+
+  if( $query->is_search ) {
+    $query->set( 'category__not_in' , array( 63, 64 ) ); // Cat ID
+  }
+  return $query;
+}
+?>

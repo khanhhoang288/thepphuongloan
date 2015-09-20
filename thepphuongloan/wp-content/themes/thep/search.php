@@ -6,9 +6,9 @@
 		<div class="page-head">
 			<h2 class="page-title">
 				<?php if ( have_posts() ) : ?>
-				<?php printf( __ti( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
+				<?php printf( __ti( 'Kết quả tìm kiếm: %s' ), '<span>' . get_search_query() . '</span>' ); ?>
 				<?php else : ?>
-				<?php _eti( 'Nothing Found' ); ?>
+				<?php _eti( 'Không tìm thấy' ); ?>
 				<?php endif; ?>
 			</h2>
 			<div class="stripe-line"></div>
