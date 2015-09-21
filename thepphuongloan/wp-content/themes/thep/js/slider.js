@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+	// Slider for category
 	if ($('#carousel')){
 		$('#carousel').bxSlider({
 	      slideWidth: 180,
@@ -7,4 +8,11 @@ jQuery(document).ready(function($) {
 	      slideMargin: 10
 	    });
 	}
+	// Workaround for LightBox
+	jQuery("iframe").contents().each(function(r,e){
+		var z= e.body;
+		if (z){
+			z.style.textAlign='center';
+		}
+	});
 });
