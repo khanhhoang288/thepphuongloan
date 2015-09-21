@@ -24,7 +24,7 @@ if( is_admin() ){
 	require_once ( get_template_directory() . '/framework/admin/framework-metaboxes.php');
 	
 	//UPDATE NOTIFIER
-	require_once ( get_template_directory() . '/framework/admin/inc/notifier/update-notifier.php');
+	//require_once ( get_template_directory() . '/framework/admin/inc/notifier/update-notifier.php');
 	
 	//IMPORTER PLUGIN
 	require_once ( get_template_directory() . '/framework/admin/inc/importer/tie-importer.php');

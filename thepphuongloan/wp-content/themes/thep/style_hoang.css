@@ -54,6 +54,10 @@ div.header-content
 	{
 		width: 78% !important;
 	}
+
+	div.box_support div.row div.nick{
+		padding-left: 0px !important;
+	}
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { 
@@ -66,6 +70,10 @@ div.header-content
 	{
 		width: 78% !important;
 	}
+
+	div.box_support div.row div.nick{
+		padding-left: 0px !important;
+	}
 } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 @media only screen and (min-width: 90.063em) {
@@ -77,6 +85,10 @@ div.header-content
 	div.content
 	{
 		width: 78% !important;
+	}
+
+	div.box_support div.row div.nick{
+		padding-left: 0px !important;
 	}
 } /* min-width 1441px, xlarge screens */
 
