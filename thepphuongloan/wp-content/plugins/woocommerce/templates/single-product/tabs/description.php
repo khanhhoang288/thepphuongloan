@@ -20,5 +20,16 @@ $heading = esc_html( apply_filters( 'woocommerce_product_description_heading', _
 <?php if ( $heading ): ?>
   <h2><?php echo $heading; ?></h2>
 <?php endif; ?>
+	
+	<?php
+		/**
+		 * woocommerce_before_single_product_summary hook
+		 *
+		 * @hooked woocommerce_show_product_sale_flash - 10
+		 * @hooked woocommerce_show_product_images - 20
+		 */
+		do_action( 'woocommerce_before_single_product_summary' );
+	?>
 
+	
 <?php the_content(); ?>

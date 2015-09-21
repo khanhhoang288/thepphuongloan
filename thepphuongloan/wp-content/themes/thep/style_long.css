@@ -293,7 +293,6 @@ div.cat-box-content li.other-news h3{
 div.content nav.woocommerce-breadcrumb{
 	display: none;
 }
-
 /* FOR PRODUCT CATEGORY DETAIL */
 div.content div.post-inner h1.page-title{
 	color: #dc1206;
@@ -518,7 +517,7 @@ div.content div.post-inner div.product h1.entry-title{
 }
 div.post-inner div.product div.woocommerce-tabs.wc-tabs-wrapper{
 	float: left;
-	width: 55%;
+	width: 100%;
 	padding: 5px;
 }
 div.post-inner div.product div.woocommerce-tabs.wc-tabs-wrapper ul.wc-tabs{

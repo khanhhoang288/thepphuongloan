@@ -63,16 +63,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
-	<?php
-		/**
-		 * woocommerce_before_single_product_summary hook
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	?>
-
 	<div class="clear"></div>
 		
 	<h1 class="entry-title">SẢN PHẨM CÙNG DANH MỤC</h1>
