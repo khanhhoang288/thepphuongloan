@@ -134,7 +134,7 @@ if( is_admin() ){
 				"bulider_latest"			=> __( 'Latest Posts', 'tie' ), 
 				"bulider_random"			=> __( 'Random Posts', 'tie' ), 
 				
-				"shortcode_tielabs"			=> __( 'Tielabs Shortcodes', 'tie' ), 
+				"shortcode_tielabs"			=> __( 'ANC Shortcodes', 'tie' ), 
 				"shortcode_box"				=> __( 'Box', 'tie' ), 
 				"shortcode_alignment"		=> __( 'Alignment:', 'tie' ), 
 				"shortcode_class"			=> __( 'Custom CSS Class:', 'tie' ), 
