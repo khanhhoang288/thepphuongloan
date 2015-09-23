@@ -9,10 +9,10 @@ jQuery(document).ready(function($) {
 	    });
 	}
 	// Workaround for LightBox
-	jQuery("iframe").contents().each(function(r,e){
-		var z= e.body;
-		if (z){
-			z.style.textAlign='center';
-		}
-	});
+	// jQuery("iframe").contents().each(function(r,e){
+	// 	var z= e.body;
+	// 	if (z){
+	// 		z.style.textAlign='center';
+	// 	}
+	// });
 });

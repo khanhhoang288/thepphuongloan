@@ -343,6 +343,7 @@ div.post-inner form{
 }
 div.post-inner ul.products{
 	margin-bottom: 15px;
+    text-align: left;
 }
 div.post-inner ul.products li.product{
 	width: 45%;
