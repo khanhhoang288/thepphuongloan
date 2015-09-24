@@ -179,7 +179,7 @@ div.widget div.widget-container ul li a{
 .widget-top h4::before{
   content: url(images/tpl/box_title_icon.png);
   position: absolute; /*or absolute*/
-  z-index: 100000; /*a number that's more than the modal box*/
+  z-index: 200; /*a number that's more than the modal box*/
   width: 16px;
   height: 31px;
   top: 2px;
