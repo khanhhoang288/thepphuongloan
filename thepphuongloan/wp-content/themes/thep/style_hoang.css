@@ -58,6 +58,24 @@ div.header-content
 	div.box_support div.row div.nick{
 		padding-left: 0px !important;
 	}
+
+	/*mega menu*/
+	div.main-menu div.mega-menu-block{
+		background-color: #168eba !important;
+		color: #fff !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li{
+		border-bottom-color: #fff !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li a.mega-links-head{
+		color: #FFFB01  !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li a{
+		color: #fff !important;
+	}
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { 
@@ -74,6 +92,24 @@ div.header-content
 	div.box_support div.row div.nick{
 		padding-left: 0px !important;
 	}
+
+	/*mega menu*/
+	div.main-menu div.mega-menu-block{
+		background-color: #168eba !important;
+		color: #fff !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li{
+		border-bottom-color: #fff !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li a.mega-links-head{
+		color: #FFFB01  !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li a{
+		color: #fff !important;
+	}
 } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 @media only screen and (min-width: 90.063em) {
@@ -89,6 +125,24 @@ div.header-content
 
 	div.box_support div.row div.nick{
 		padding-left: 0px !important;
+	}
+
+	/*mega menu*/
+	div.main-menu div.mega-menu-block{
+		background-color: #168eba !important;
+		color: #fff !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li{
+		border-bottom-color: #fff !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li a.mega-links-head{
+		color: #FFFB01  !important;
+	}
+
+	div.main-menu div.mega-menu-block ul li a{
+		color: #fff !important;
 	}
 } /* min-width 1441px, xlarge screens */
 
@@ -233,20 +287,3 @@ div.content div.home-e3lan div.fluid-width-video-wrapper iframe{
 	height: 75%;
 }
 
-/*mega menu*/
-div.main-menu div.mega-menu-block{
-	background-color: #168eba !important;
-	color: #fff !important;
-}
-
-div.main-menu div.mega-menu-block ul li{
-	border-bottom-color: #fff !important;
-}
-
-div.main-menu div.mega-menu-block ul li a.mega-links-head{
-	color: #FFFB01  !important;
-}
-
-div.main-menu div.mega-menu-block ul li a{
-	color: #fff !important;
-}
