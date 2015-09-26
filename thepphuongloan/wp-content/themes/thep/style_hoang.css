@@ -232,3 +232,21 @@ div.content div.home-e3lan div.fluid-width-video-wrapper{
 div.content div.home-e3lan div.fluid-width-video-wrapper iframe{
 	height: 75%;
 }
+
+/*mega menu*/
+div.main-menu div.mega-menu-block{
+	background-color: #168eba !important;
+	color: #fff !important;
+}
+
+div.main-menu div.mega-menu-block ul li{
+	border-bottom-color: #fff !important;
+}
+
+div.main-menu div.mega-menu-block ul li a.mega-links-head{
+	color: #FFFB01  !important;
+}
+
+div.main-menu div.mega-menu-block ul li a{
+	color: #fff !important;
+}
