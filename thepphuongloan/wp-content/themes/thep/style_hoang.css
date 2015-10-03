@@ -155,6 +155,19 @@ div.header-content
 		max-width: 95%;
 	}
 }
+
+@media only screen and (min-width: 985px) and (max-width: 1025px) {
+	#sidebar{
+		width: 20% !important;
+	}
+	#main-content div.content{
+		width: 78%;
+	}
+	div.box_support div.skype{
+		float: none !important;
+	}
+}
+
 /*resize copyright*/
 div.inner-wrapper div.footer-bottom{
 	line-height: 15px;
