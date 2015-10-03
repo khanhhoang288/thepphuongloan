@@ -150,7 +150,11 @@ div.header-content
 
 @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
-
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	div.header-content div.logo img{
+		max-width: 95%;
+	}
+}
 /*resize copyright*/
 div.inner-wrapper div.footer-bottom{
 	line-height: 15px;
