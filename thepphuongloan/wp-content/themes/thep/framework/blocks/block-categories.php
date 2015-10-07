@@ -114,7 +114,11 @@
 					<li <?php tie_post_class( 'other-news' ); ?>>
 						<?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() && empty( $block['thumb_small'] ) ) : ?>			
 							<div class="post-thumbnail">
-								<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'tie-small' ); ?><span class="fa overlay-icon"></span></a>
+								<?php if ($cat_title == 'Đối Tác' || $cat_title == 'Khách hàng' || $cat_title == 'Đối tác' || $cat_title == 'Khách Hàng' || $cat_title == 'ĐỐI TÁC' || $cat_title == 'KHÁCH HÀNG') : ?>
+									<?php the_post_thumbnail( 'tie-small' ); ?>
+								<?php else: ?>
+									<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'tie-small' ); ?><span class="fa overlay-icon"></span></a>
+								<?php endif; ?>
 							</div><!-- post-thumbnail /-->
 						<?php endif; ?>
 						<h3 class="post-box-title">
