@@ -304,3 +304,20 @@ div.content div.home-e3lan div.fluid-width-video-wrapper iframe{
 	height: 75%;
 }
 
+div.post-inner div.title-404{
+	font-size: 100px;
+	padding-top: 10px;
+	color: #000;
+}
+
+div.error404 div.post-inner div.entry p{
+	padding-top: 50px;
+}
+
+/*thay doi logo trang login*/
+
+/*thay doi logo trang login*/
+
+#login h1 a {
+	background-image: url("http://thepphuongloan.com/wp-content/uploads/2015/10/logopl.png"); !important;
+}
