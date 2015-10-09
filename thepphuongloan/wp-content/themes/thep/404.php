@@ -24,29 +24,8 @@
 					$related_query = new wp_query( $args );
 					if( $related_query->have_posts() ) : $count=0;
 				?>
-	
-				<section id="related_posts">
-					<div class="block-head">
-						<h3><?php _eti( 'Check Also' ); ?></h3><div class="stripe-line"></div>
-					</div>
-					<div class="post-listing">
-						<?php while ( $related_query->have_posts() ) : $related_query->the_post()?>
-						<div <?php tie_post_class('related-item'); ?>>
-							<?php if ( function_exists("has_post_thumbnail") && has_post_thumbnail() ) : ?>			
-							<div class="post-thumbnail">
-								<a href="<?php the_permalink(); ?>" rel="bookmark">
-									<?php the_post_thumbnail( 'tie-medium' ); ?>
-									<span class="fa overlay-icon"></span>
-								</a>
-							</div><!-- post-thumbnail /-->
-							<?php endif; ?>			
-							<h3><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-							<p class="post-meta"><?php tie_get_time() ?></p>
-						</div>
-						<?php endwhile;?>
-						<div class="clear"></div>
-					</div>
-				</section>
+
+			
 				<?php
 				endif;
 				
